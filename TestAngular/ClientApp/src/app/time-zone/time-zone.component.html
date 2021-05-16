@@ -1,0 +1,7 @@
+<h1 id="tableLabel">Czas dla zdefiniowanej strefy czasowej</h1>
+
+<p *ngIf="!timeZoneData"><em>Loading...</em></p>
+<div *ngIf="timeZoneData">
+  <p>Strefa czasowa: {{timeZoneData.timezone}}</p>
+  <p>Aktualny czas: {{timeZoneData.datetime}}</p>
+</div>
